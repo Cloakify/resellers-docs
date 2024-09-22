@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "2bbc9ad7-5848-4e3b-a840-f60febce2c41",
+		"name": "Cloakify-resellers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Customers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "resellerApiKey",
+						"value": "[YOUR_API_KEY]",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://p1.silkroadway.cloud/api/v1/reseller/links",
+					"protocol": "https",
+					"host": [
+						"p1",
+						"silkroadway",
+						"cloud"
+					],
+					"path": [
+						"api",
+						"v1",
+						"reseller",
+						"links"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request new subscriptions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "resellerApiKey",
+						"type": "text",
+						"value": "[YOUR_API_KEY]"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"plans\":[\r\n        {\r\n            \"id\": \"1\",\r\n            \"qty\":\"1\"\r\n        },\r\n         {\r\n            \"id\": \"2\",\r\n            \"qty\":\"1\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://p1.silkroadway.cloud/api/v1/reseller/order",
+					"protocol": "https",
+					"host": [
+						"p1",
+						"silkroadway",
+						"cloud"
+					],
+					"path": [
+						"api",
+						"v1",
+						"reseller",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all plans",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "resellerApiKey",
+						"type": "text",
+						"value": "[YOUR_API_KEY]"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://p1.silkroadway.cloud/api/v1/reseller/plans",
+					"protocol": "https",
+					"host": [
+						"p1",
+						"silkroadway",
+						"cloud"
+					],
+					"path": [
+						"api",
+						"v1",
+						"reseller",
+						"plans"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
