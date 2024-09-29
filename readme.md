@@ -64,11 +64,14 @@ At the end of each week, a settlement notice will be sent to the sales represent
 <br><br>
 Price is calculated based on the traffic you consume, for example if you get 3x 20GB subscription you'll have to pay for 60GB of traffic usage.
 <br><br>
-Current Price For Each GB: 0.033$
+Current Price For Each GB: `0.033$`
 <br><br>
-Payment Method : TRX
+Payment Method : `TRX`
 <br><br>
-Wallet Address: TPebfsG6zM4FodyCbgiEiXrZ2diVHWmLFt
+Wallet Address:
+```http
+TPebfsG6zM4FodyCbgiEiXrZ2diVHWmLFt
+```
 
 ## Postman Collection
 
