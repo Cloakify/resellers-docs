@@ -69,7 +69,7 @@ Current Price For Each GB: `0.033$`
 Payment Method : `TRX`
 <br><br>
 Wallet Address:
-```http
+```javascript
 TPebfsG6zM4FodyCbgiEiXrZ2diVHWmLFt
 ```
 
